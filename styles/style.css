@@ -25,10 +25,11 @@ h1, h2, a{
 }
 h2, h3, h4, a{
     font-weight: 400;
+    text-decoration: none;
 }
 h1, h2, h3, h4, h5 {
     text-align: center;
-    text-decoration: none;
+    
 }
 h1 {
     font-size: 24px;
@@ -45,13 +46,78 @@ h2 {
     width: 100%;
     height:auto;
     background-color: green;
+   
 }
 
-/*--------//LAYOUT//--------*/
-/*--------//LAYOUT//--------*/
-/*--------//LAYOUT//--------*/
-/*--------//LAYOUT//--------*/
-/*--------//LAYOUT//--------*/
-/*--------//LAYOUT//--------*/
-/*--------//LAYOUT//--------*/
-/*--------//LAYOUT//--------*/
+/*--------//HEADER//--------*/
+
+.header {
+    grid-area: header;
+    background: url("../img/hero.jpeg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35rem;
+    border-bottom-left-radius: 1rem;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*---HEADER-nav---*/
+
+.header__nav {
+    background: linear-gradient(rgba(222, 176, 11, 0.8), rgba(222, 176, 11, 0.8));
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:3rem;
+    padding:0 1rem;
+
+}
+.header__nav__hamburger, .header__nav__shop-cart{
+    font-size: 24px;
+    color: white;
+}
+
+.header__nav__logo {
+    align-self: end;
+}
+
+/*---HEADER-hero---*/
+
+.header__hero__text{
+    margin-top: 24rem;
+}
+.header__hero__text--btn{
+    align-self: center;
+    margin-bottom: 1rem;
+
+}
+
+/*--------//MAIN//--------*/
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows:1, 1fr;
+
+}
+/*---MAIN-furniture---*/
+.main__furniture{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+
+}
+/*---MAIN-hero---*/
+/*---MAIN-design---*/
+
+/*--------//FOOTER//--------*/
+.footer {
+    grid-area: footer;
+}
