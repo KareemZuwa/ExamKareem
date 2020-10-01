@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExamKareem</title>
     <link href="styles/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7359295087.js" crossorigin="anonymous"></script>
 
@@ -13,35 +13,122 @@
 
 <body>
 
-    <!----HEADER---->
+    <!--------//WRAPPER//-------->
+    <div class="wrapper">
 
-    <header class="header">
+        <!--------//HEADER//-------->
 
-        <article class="header__nav">
-            <i class="fas fa-bars hamburger"></i>
-            <img class="header__nav__logo" src="img/Group 14logo.svg" alt="logo">
-            <i class="fas fa-shopping-cart shop-cart"></i>
-        </article>
+        <header class="header">
 
-        <article class="header__hero__text--">
-            <h1>Interior design at its best</h1>
-        </article>
-
-        <a href="#">ABOUT</a>   
-    </header>
-
-    <main class="main">
-        <section class="main__furniture--brd-white">
-            <article class="main__furniture--brd-white__rotting">
-                <img src="" alt="">
-                <h2></h2>
-
+            <!---HEADER__nav---->
+            <article class="header__nav">
+                <i class="fas fa-bars header__nav__hamburger"></i>
+                <img class="header__nav__logo" src="img/Group 14logo.svg" alt="logo">
+                <i class="fas fa-shopping-cart header__nav__shop-cart"></i>
             </article>
-        </section>
 
-    <!----MAIN---->
+            <!---HEADER__hero---->
 
-    </main>
+            <article class="header__hero__text">
+                <h1 class="header__hero__text--goldyellow">Interior design at its best</h1>
+            </article>
+
+            <a class="header__hero__text--btn" href="#">ABOUT</a>   
+        </header>
+
+        <!--------//MAIN//-------->
+
+        <main class="main">
+
+            <!---MAIN_furniture---->
+
+            <section class="main__furniture">
+
+                <article class="main__furniture--brd-white__rotting">
+                    <img src="" alt="">
+                    <h2 class="main__furniture--brd-white__rotting__text">Rotting</h2>
+                    <h3 class="main__furniture--brd-white__lorem">Lorem ipsum dolor sit</h3>
+                </article>
+
+                <article class="main__furniture--brd-white__chairs">
+                    <img src="" alt="">
+                    <h2 class="main__furniture--brd-white__chairs__text">Chairs</h2>
+                    <h3 class="main__furniture--brd-white__lorem">Lorem ipsum dolor sit</h3>
+                </article>
+
+                <article class="main__furniture--brd-white__stools">
+                    <img src="" alt="">
+                    <h2 class="main__furniture--brd-white__stools__text">Stools</h2>
+                    <h3 class="main__furniture--brd-white__lorem">Lorem ipsum dolor sit</h3>
+                </article>
+
+                <article class="main__furniture--brd-white__sofas">
+                    <img src="" alt="">
+                    <h2 class="main__furniture--brd-white__sofas__text">Sofas</h2>
+                    <h3 class="main__furniture--brd-white__lorem">Lorem ipsum dolor sit</h3>
+                </article>
+                
+            </section>
+
+            <!---MAIN_hero---->
+
+            <section class="main__hero-qoute">
+
+                <h6 class="main__hero-quote__text">
+                    Our lives happen around our furniture. 
+                    Every day, our bed frames, tables, 
+                    and chairs support us, 
+                    often without thanks and appreciation.
+                </h6>
+            </section>
+
+            <!---MAIN_design---->
+
+            <section class="main__design--bg--white">
+
+                <img class="main__design--bg--white__wallen  brd-gold">
+                <article class="main__design--bg--white__wallen__box  txt-block">
+                    <h5 class="main__design--bg--white__wallen__box--wide  dsgn-name">CHRIS WALLEN</h5>
+                    <h4 class="main__design--bg--white__wallen__box--small  dsgn">Designer</h4>
+                </article>
+
+                <img class="main__design--bg--white__chi  brd-gold">
+                <article class="main__design--bg--white__chi__box  txt-block">
+                    <h5 class="main__design--bg--white__chi__box--wide  dsgn-name">JOHN CHI</h5>
+                    <h4 class="main__design--bg--white__chi__box--small  dsgn">Designer</h4>
+                </article>
+
+                <img class="main__design--bg--white__garther  brd-gold">
+                <article class="main__design--bg--white__garther__box  txt-block">
+                    <h5 class="main__design--bg--white__garther__box--wide  dsgn-name">MAY GARTHER</h5>
+                    <h4 class="main__design--bg--white__garther__box--small  dsgn">Designer</h4>
+                </article>
+                
+            </section>
+
+        </main>
+
+        <!--------//FOOTER//-------->
+
+        <footer class="footer">
+
+            <section class="footer__container">
+
+                <article class="footer__container__blockone">
+                    <i class="fas fa-sort-up footer__container__blockone__arrow"></i>
+                </article>
+
+                <article class="footer__container__blocktwo">
+                    <i class="fab fa-instagram-square  footer__container__blocktwo__instagram"></i>
+                    <i class="fab fa-facebook-f  footer__container__blocktwo__facebook"></i>
+                    <i class="fab fa-twitter  footer__container__blocktwo__twitter"></i>
+                </article>
+
+            </section>
+
+        </footer>
+
+    </div>
     
 </body>
 </html>

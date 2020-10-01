@@ -1,3 +1,5 @@
+/*--------//LAYOUT//--------*/
+
 :root {
     --maxWidth: 1050px;
     --goldyellow: #DEB00B;
@@ -9,15 +11,47 @@ body {
     background: #E5E5E5;
 }
 
-h2, h3, a {
+h2, h3, h5, h6, a {
     font-family: 'Ubuntu', sans-serif;
 }
 h1, h4 {
     font-family: 'Baloo Tammudu 2', cursive;
 }
-a {
-    text-decoration: none;
+h3, h4, h5, h6, a {
+    font-size: 12px;
+}
+h1, h2, a{
     color: var(--goldyellow);
+}
+h2, h3, h4, a{
     font-weight: 400;
 }
+h1, h2, h3, h4, h5 {
+    text-align: center;
+    text-decoration: none;
+}
+h1 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 18px;
+}
 
+/*--------//WRAPPER//--------*/
+
+.wrapper {
+    margin:0 auto;
+    max-width: var(--maxWidth);
+    width: 100%;
+    height:auto;
+    background-color: green;
+}
+
+/*--------//LAYOUT//--------*/
+/*--------//LAYOUT//--------*/
+/*--------//LAYOUT//--------*/
+/*--------//LAYOUT//--------*/
+/*--------//LAYOUT//--------*/
+/*--------//LAYOUT//--------*/
+/*--------//LAYOUT//--------*/
+/*--------//LAYOUT//--------*/
