@@ -37,6 +37,11 @@ h1 {
 h2 {
     font-size: 18px;
 }
+a {
+    border:1px solid var(--goldyellow);
+    padding: 0.2rem .5rem;
+    border-radius: 10px;
+}
 
 /*--------//WRAPPER//--------*/
 
@@ -45,14 +50,17 @@ h2 {
     max-width: var(--maxWidth);
     width: 100%;
     height:auto;
-    background-color: green;
-   
+    background-color: var(--goldyellow);
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";  
 }
 
 /*--------//HEADER//--------*/
 
 .header {
-    grid-area: header;
+    grid-area:header;
     background: url("../img/hero.jpeg");
     background-position: top;
     background-size: cover;
@@ -89,13 +97,13 @@ h2 {
 
 /*---HEADER-hero---*/
 
-.header__hero__text{
-    margin-top: 24rem;
+.header__hero__text--goldyellow {
+    margin:26rem auto 0;
 }
-.header__hero__text--btn{
-    align-self: center;
-    margin-bottom: 1rem;
 
+.header__hero__text--btn {
+    align-self: center;
+    margin:0 auto 1.2rem;
 }
 
 /*--------//MAIN//--------*/
@@ -108,16 +116,54 @@ h2 {
 }
 /*---MAIN-furniture---*/
 .main__furniture{
+    margin:1.4rem;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    gap: 1rem;
-
+    gap: 1.4rem;
 }
+.main__furniture article{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:14.6rem;
+    border-bottom-left-radius: 10px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+}
+.main__furniture--brd-white__rotting {
+    background: url(../img/rotting.jpg);   
+}
+.main__furniture--brd-white__chairs {
+    background: url(../img/chair.jpg);
+}
+.main__furniture--brd-white__stools {
+    background: url(../img/stool.jpg);
+}
+.main__furniture--brd-white__sofas {
+    background: url(../img/sofa.jpg);
+}
+
+.main__furniture--brd-white__text, .main__furniture--brd-white__lorem {
+    margin:0;  
+}
+
+
 /*---MAIN-hero---*/
+
+.main__hero-qoute {
+    background: url(../img/quote\ picture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 16.8rem;
+    display: flex;
+    flex-direction: row;
+}
 /*---MAIN-design---*/
 
 /*--------//FOOTER//--------*/
 .footer {
-    grid-area: footer;
+    grid-area:footer;
+
 }
