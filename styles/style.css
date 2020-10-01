@@ -1,0 +1,23 @@
+:root {
+    --maxWidth: 1050px;
+    --goldyellow: #DEB00B;
+
+}
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: #E5E5E5;
+}
+
+h2, h3, a {
+    font-family: 'Ubuntu', sans-serif;
+}
+h1, h4 {
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+a {
+    text-decoration: none;
+    color: var(--goldyellow);
+    font-weight: 400;
+}
+
