@@ -11,37 +11,41 @@ body {
     background: #E5E5E5;
 }
 
-h2, h3, h5, h6, a {
+h2, h3, h4, h5, a {
     font-family: 'Ubuntu', sans-serif;
 }
-h1, h4 {
-    font-family: 'Baloo Tammudu 2', cursive;
-}
-h3, h4, h5, h6, a {
+
+h3, h4, h5, a {
     font-size: 12px;
 }
 h1, h2, a{
     color: var(--goldyellow);
 }
-h2, h3, h4, a{
+h2, h3, a{
     font-weight: 400;
     text-decoration: none;
 }
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h5 {
     text-align: center;
     
 }
 h1 {
+    font-family: 'Baloo Tammudu 2', cursive;
     font-size: 24px;
 }
 h2 {
     font-size: 18px;
+}
+h4 {
+    line-height: 24px;
+
 }
 a {
     border:1px solid var(--goldyellow);
     padding: 0.2rem .5rem;
     border-radius: 10px;
 }
+
 
 /*--------//WRAPPER//--------*/
 
@@ -84,6 +88,8 @@ a {
     align-items: center;
     height:3rem;
     padding:0 1rem;
+    position: fixed;
+    width: 92vw; 
 
 }
 .header__nav__hamburger, .header__nav__shop-cart{
@@ -98,12 +104,15 @@ a {
 /*---HEADER-hero---*/
 
 .header__hero__text--goldyellow {
-    margin:26rem auto 0;
+    margin:29.1rem auto 0;
 }
 
 .header__hero__text--btn {
     align-self: center;
     margin:0 auto 1.2rem;
+}
+.header__hero__text--btn a {
+    color:white;
 }
 
 /*--------//MAIN//--------*/
@@ -131,6 +140,7 @@ a {
     border: 1px solid white;
     display: flex;
     flex-direction: column;
+
 }
 .main__furniture--brd-white__rotting {
     background: url(../img/rotting.jpg);   
@@ -144,9 +154,20 @@ a {
 .main__furniture--brd-white__sofas {
     background: url(../img/sofa.jpg);
 }
+.main__furniture--brd-white__text {
+    padding-top: 0.5rem;
+    padding-bottom: 0.1rem;
+    transition: 2s ease:
+
+}
+.main__furniture--brd-white__lorem {
+    padding-top: 0.1rem;
+    padding-bottom: 0.5rem;
+}
 
 .main__furniture--brd-white__text, .main__furniture--brd-white__lorem {
-    margin:0;  
+    margin:0;
+    background: white;  
 }
 
 
@@ -156,14 +177,58 @@ a {
     background: url(../img/quote\ picture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom-left-radius: 1rem;
     height: 16.8rem;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
-/*---MAIN-design---*/
+
+.main__hero-quote__text {
+    margin: 1.3rem 1.9rem 4rem 1.4rem;
+}
+.main__hero__quote--btn {
+    align-self: end;
+    margin:auto auto 1.4rem 2.2rem;
+}
+
+/*---MAIN-about---*/
+
+.main__about__txt-block {
+    display: grid;
+    grid-template-columns:repeat(1 1fr);
+    margin:1.4rem;
+
+}
+.main__about__txt-block h1{
+    color: white;
+    margin:0;
+}
+.main__about__txt-block h4 {
+    text-align: center;
+}
 
 /*--------//FOOTER//--------*/
 .footer {
     grid-area:footer;
+    background: black;
+    height: 17.7rem;
+    position:relative;
+    display: grid;
+    grid-template-columns:1fr;
+    justify-content: center;
+}
+.footer__block-one__arrow {
+    justify-items: center;
+    overflow: hidden;
+}
 
+.footer__block-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+.footer__block-two__instagram, .footer__block-two__facebook, .footer__block-two__twitter {
+    color: var(--goldyellow);
+    font-size: 60px;
 }
