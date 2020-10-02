@@ -16,20 +16,30 @@
     <!--------//WRAPPER//-------->
     <div class="wrapper">
 
+        <section class="wrapper_drop">
+            <a href="#hero">HOME</a>
+            <a href="#">DESIGNERS</a>
+            <a href="#about">ABOUT</a>
+            <a href="#">CONTACTS</a>
+        </section>
+
+
         <!--------//HEADER//-------->
 
         <header class="header">
 
             <!---HEADER__nav---->
             <article class="header__nav">
-                <i class="fas fa-bars header__nav__hamburger"></i>
+                <a class="header__nav__hamburger">
+                    <i class="fas fa-bars"></i>
+                </a>
                 <img class="header__nav__logo" src="img/Group 14logo.svg" alt="logo">
                 <i class="fas fa-shopping-cart header__nav__shop-cart"></i>
             </article>
 
             <!---HEADER__hero---->
 
-            <article class="header__hero__text">
+            <article class="header__hero__text" id="hero">
                 <h1 class="header__hero__text--goldyellow">Interior design at its best</h1>
             </article>
 
@@ -116,9 +126,7 @@
         <footer class="footer">
 
             <article class="footer__block-one">
-                <figure class="footer__block-one__arrow">
-                    <img src="img/Vectorwhite arrow.svg" alt="arrow">
-                </figure>
+                <a href="#hero"><i class="fas fa-sort-up"></i></a>
                 
             </article>
 
@@ -131,6 +139,25 @@
         </footer>
 
     </div>
+
+    <script>
+        document.querySelector('.header__nav__hamburger')
+        .addEventListener('click', function(){
+
+            document.querySelector('.wrapper').classList.toggle('open')
+        })
+
+        document.querySelectorAll('.wrapper_drop > a')
+        .forEach(link => {
+            link.addEventListener('click' , function(){
+                document.querySelector('.wrapper').classList.toggle('open')
+            })
+
+        })
+
+
+
+    </script>
     
 </body>
 </html>

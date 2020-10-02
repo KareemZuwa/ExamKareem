@@ -61,14 +61,38 @@ a {
     "footer";  
 }
 
+.wrapper_drop {
+    background: rgba(222, 176, 11, 0.8);
+    width: 100vw;
+    height: 27rem;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    transform: translateY(-100%);
+    transition: all .2s ease;
+}
+.wrapper.open section {
+    transform: translateY(0%);
+}
+
+.wrapper_drop a {
+    font-size: 20px;
+    color:white;
+    border: none;
+
+}
+
 /*--------//HEADER//--------*/
 
 .header {
     grid-area:header;
-    background: url("../img/hero.jpeg");
-    background-position: top;
+    background: url("../img/hero.jpeg")no-repeat top;
     background-size: cover;
-    background-repeat: no-repeat;
     height: 35rem;
     border-bottom-left-radius: 1rem;
     position: relative;
@@ -82,17 +106,18 @@ a {
 /*---HEADER-nav---*/
 
 .header__nav {
-    background: linear-gradient(rgba(222, 176, 11, 0.8), rgba(222, 176, 11, 0.8));
+    background: rgba(222, 176, 11, 0.8);
     display:flex;
     justify-content: space-between;
     align-items: center;
     height:3rem;
-    padding:0 1rem;
     position: fixed;
-    width: 92vw; 
+    width: 100vw;
+    z-index: 5; 
 
 }
 .header__nav__hamburger, .header__nav__shop-cart{
+    padding:0 1rem;
     font-size: 24px;
     color: white;
 }
@@ -140,8 +165,9 @@ a {
     border: 1px solid white;
     display: flex;
     flex-direction: column;
-
+    transition: 1s ease;
 }
+
 .main__furniture--brd-white__rotting {
     background: url(../img/rotting.jpg);   
 }
@@ -157,12 +183,16 @@ a {
 .main__furniture--brd-white__text {
     padding-top: 0.5rem;
     padding-bottom: 0.1rem;
-    transition: 2s ease:
-
+    transition: 1s ease;
 }
+
 .main__furniture--brd-white__lorem {
     padding-top: 0.1rem;
     padding-bottom: 0.5rem;
+    transition: 1s ease;
+}
+.main__furniture article:hover, .main__furniture--brd-white__text:hover, .main__furniture--brd-white__lorem:hover {
+    transform: scale(1.1);
 }
 
 .main__furniture--brd-white__text, .main__furniture--brd-white__lorem {
@@ -218,10 +248,13 @@ a {
     justify-content: center;
 }
 .footer__block-one__arrow {
-    justify-items: center;
-    overflow: hidden;
+    margin-right: 150px;
 }
-
+.footer__block-one a {
+    margin-left: 166px;
+    font-size: 36px;
+    border: none;
+}
 .footer__block-two {
     display: flex;
     flex-direction: row;
