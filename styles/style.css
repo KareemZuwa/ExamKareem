@@ -3,8 +3,8 @@
 :root {
     --maxWidth: 1050px;
     --goldyellow: #DEB00B;
-
 }
+
 body {
     max-width: 1440px;
     margin: 0 auto;
@@ -14,7 +14,6 @@ body {
 h2, h3, h4, h5, a {
     font-family: 'Ubuntu', sans-serif;
 }
-
 h3, h4, h5, a {
     font-size: 12px;
 }
@@ -26,9 +25,9 @@ h2, h3, a{
     text-decoration: none;
 }
 h1, h2, h3, h5 {
-    text-align: center;
-    
+    text-align: center;   
 }
+
 h1 {
     font-family: 'Baloo Tammudu 2', cursive;
     font-size: 24px;
@@ -38,14 +37,12 @@ h2 {
 }
 h4 {
     line-height: 24px;
-
 }
 a {
     border:1px solid var(--goldyellow);
     padding: 0.2rem .5rem;
     border-radius: 10px;
 }
-
 
 /*--------//WRAPPER//--------*/
 
@@ -64,9 +61,8 @@ a {
 .wrapper_drop {
     background: rgba(222, 176, 11, 0.8);
     width: 100vw;
-    max-width: var(--maxWidth);
+    max-width: 1050px;
     height: 27rem;
-    padding: 1rem;
     border-bottom-left-radius: 1rem;
     position: fixed;
     z-index: 1;
@@ -80,14 +76,12 @@ a {
 .wrapper.open section {
     transform: translateY(0%);
 }
-
 .wrapper_drop a {
-    padding-left: 1.5rem;
+    padding: 4rem 0 0 2rem;
     font-size: 20px;
     color:white;
     border: none;
 }
-
 .wrapper.open > .header > .header__nav > a {
     border:1px solid white;
 }
@@ -101,7 +95,6 @@ a {
     height: 35rem;
     border-bottom-left-radius: 1rem;
     position: relative;
-
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -120,14 +113,12 @@ a {
     width: 100vw;
     max-width: var(--maxWidth);
     z-index: 5; 
-
 }
 .header__nav__hamburger, .header__nav__shop-cart{
     padding:0 1rem;
     font-size: 24px;
     color: white;
 }
-
 .header__nav__logo {
     align-self: end;
 }
@@ -145,6 +136,7 @@ a {
     "special"
     "best";
 }
+
 .header__hero__text--logo {
     grid-area: logo;
     justify-self: end;
@@ -153,7 +145,6 @@ a {
     padding-right: 5.15rem;
     opacity:0;
 }
-
 .header__hero__text--special {
     grid-area: special;
     justify-self: end;
@@ -193,47 +184,38 @@ a {
     grid-template-rows: auto;
     gap: 1.4rem;
 }
-.main__furniture article{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:14.6rem;
-    border-bottom-left-radius: 10px;
+
+.main__furniture article figure {
+    display:flex;
+    margin:0;
+    width:100%;
+    position:relative;
     border: 1px solid white;
-    display: flex;
-    flex-direction: column;
-    transition: 1s ease;
+    border-bottom-left-radius: 1rem;
+    transition: all .3s ease;
 }
-
-.main__furniture--brd-white__rotting {
-    background: url(../img/rotting.jpg);   
+.main__furniture article figure img {
+    margin:0;
+    width: 100%;
+    border-bottom-left-radius: 1rem;
 }
-.main__furniture--brd-white__chairs {
-    background: url(../img/chair.jpg);
-}
-.main__furniture--brd-white__stools {
-    background: url(../img/stool.jpg);
-}
-.main__furniture--brd-white__sofas {
-    background: url(../img/sofa.jpg);
-}
-.main__furniture--brd-white__text {
-    padding-top: 0.5rem;
-    padding-bottom: 0.1rem;
-    transition: 1s ease;
-}
-
-.main__furniture--brd-white__lorem {
-    padding-top: 0.1rem;
-    padding-bottom: 0.5rem;
-    transition: 1s ease;
-}
-.main__furniture article:hover, .main__furniture--brd-white__text:hover, .main__furniture--brd-white__lorem:hover {
-    transform: scale(1.1);
+.main__furniture article figure figcaption {
+    position: absolute;
+    top:0;
+    width: 100%;
+    background: white;
 }
 .main__furniture--brd-white__text, .main__furniture--brd-white__lorem {
-    margin:0;
-    background: white;  
+    margin:0; 
+    padding: 0.2rem;
+    transition: all .3s ease;
+}
+.main__furniture--brd-white__lorem {
+    padding-bottom: 0.5rem;
+}
+
+.main__furniture article figure:hover, .main__furniture--brd-white__text:hover, .main__furniture--brd-white__lorem:hover {
+    transform: scale(1.1);
 }
 
 /*---MAIN-hero---*/
@@ -248,7 +230,6 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-
 .main__hero-quote__text {
     margin: 1.3rem 1.9rem 4rem 1.4rem;
 }
@@ -256,12 +237,10 @@ a {
     display: flex;
     flex-direction: column;
 }
-
 .main__hero__quote__links--btn {
     align-self: start;
     margin:auto auto 1.4rem 1.4rem;
 }
-
 .main__hero-qoute a {
     color:white;
     border:1px solid white;
@@ -273,7 +252,6 @@ a {
     display: grid;
     grid-template-columns:repeat(1 1fr);
     margin:0;
-
 }
 .main__about__txt-block h1{
     color: white;
@@ -294,16 +272,17 @@ a {
     grid-template-columns:1fr;
     justify-content: center;
 }
+
 .footer__block-one {
     padding: 1.4rem;
     display: flex;
     justify-content: center;
 }
-
 .footer__block-one a {
     font-size: 60px;
     border: none;
 }
+
 .footer__block-two {
     display: flex;
     flex-grow: 2;
@@ -322,17 +301,17 @@ a {
 
     /*----Wrapper-changes----*/
     .wrapper_drop {
-        height: 28rem;
+        height: 36rem;   
     }
     .wrapper_drop a {
-        align-self: baseline;
-        padding:5rem 3rem 0;
+        padding:5rem 4rem 0;
     }
 
     /*----Header-changes----*/
     .header{
         height: 46rem;
     }
+
     .header__nav {
         height: 6rem;
     }
@@ -348,10 +327,6 @@ a {
         padding-top: 1.3rem;
         align-self: center;
     }
-
-    /*.header__hero__text--goldyellow {
-        margin:40rem 0 0;
-    }*/
 
     /*----Main-changes----*/
 
@@ -415,8 +390,5 @@ a {
         color: var(--goldyellow);
         font-size: 104px;
     }
-
-    
-
 
 }
