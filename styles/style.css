@@ -134,8 +134,37 @@ a {
 
 /*---HEADER-hero---*/
 
+.header__hero__text {
+    display: grid;
+    height:92.7%;
+    margin: 0;
+    grid-template-columns:repeat(1, 1fr);
+    grid-template-rows:auto 19rem 4rem;
+    grid-template-areas:
+    "logo"
+    "special"
+    "best";
+}
+.header__hero__text--logo {
+    grid-area: logo;
+    justify-self: end;
+    align-self: end;
+    width: 10rem;
+    padding-right: 5.15rem;
+    opacity:0;
+}
+
+.header__hero__text--special {
+    grid-area: special;
+    justify-self: end;
+    align-self: end;
+    padding-right: 6rem;
+    opacity: 0;
+}
 .header__hero__text--goldyellow {
-    margin:29.1rem 0 0;
+    grid-area: best;
+    align-self: end;
+    margin-block-end:0;
 }
 
 .header__hero__text--btn {
@@ -213,6 +242,7 @@ a {
     background: url(../img/quote\ picture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     border-bottom-left-radius: 1rem;
     height: 16.8rem;
     display: grid;
@@ -229,7 +259,7 @@ a {
 
 .main__hero__quote__links--btn {
     align-self: start;
-    margin:auto auto 1.4rem 2.2rem;
+    margin:auto auto 1.4rem 1.4rem;
 }
 
 .main__hero-qoute a {
@@ -290,11 +320,6 @@ a {
 
 @media screen and (min-width: 700px) {
 
-    h4 {
-        font-size: 24px;
-        line-height: 51px;
-    }
-
     /*----Wrapper-changes----*/
     .wrapper_drop {
         height: 28rem;
@@ -312,7 +337,7 @@ a {
         height: 6rem;
     }
     .header__nav img {
-        width: 18%;
+        width: 8rem;
         height: auto;
     }
     .header__nav__hamburger, .header__nav__shop-cart{
@@ -324,24 +349,74 @@ a {
         align-self: center;
     }
 
-    .header__hero__text--goldyellow {
+    /*.header__hero__text--goldyellow {
         margin:40rem 0 0;
-    }
+    }*/
 
     /*----Main-changes----*/
+
+    .main__furniture{
+        margin:2rem;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 2rem;
+    }
+
     .main__hero-qoute {
         height: 25rem;
     }
     .main__hero-quote__text {
         margin: 1.3rem 2rem 2rem 1.4rem;
+        padding:0.3rem;
     }
     .main__hero-quote__links {
         display: flex;
         flex-direction: row;
-        padding: 1.4rem;
+        padding: 2rem;
     }
     .main__hero__quote__links--btn {
-        align-self: center;
-        margin:auto auto 1.4rem 2.7rem;
+        align-self: end;
+        margin:auto auto 0rem 2rem;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    h4 {
+        font-size: 24px;
+        line-height: 51px;
+    }
+    .header__hero__text--logo {
+        opacity: 0.4;
+    }
+    .header__hero__text--special {
+        opacity: 1;
+    }
+
+    .main__furniture {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .main__hero-qoute {
+        height: 31rem;
+    }
+    .main__hero-qoute h4 {
+        font-size: 30px;
+        letter-spacing: 2%;
+    }
+    .main__hero__quote__links--btn {
+        margin-left: 4rem;
+    }
+    .main__hero-quote__text {
+        margin: 1.3rem 10rem 7rem 2rem;  
+    }
+    .footer__block-two__instagram, .footer__block-two__facebook, .footer__block-two__twitter {
+        color: var(--goldyellow);
+        font-size: 104px;
+    }
+
+    
+
 
 }
