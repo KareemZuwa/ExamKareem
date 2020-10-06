@@ -42,7 +42,7 @@ a {
     padding: 0.2rem .5rem;
     border-radius: 10px;
 }
-.main__furniture article, .main__furniture__page-designer--names {
+.main__furniture article, .main__furniture__page-designer--names { /*alla bildcontainers har shadows*/
     box-shadow: .3rem .3rem .2rem rgba(0,0,0,.1);
     border-bottom-left-radius: 1rem;
 }
@@ -241,7 +241,7 @@ a {
     align-self: start;
     margin:auto auto 1.4rem 1.4rem;
 }
-.main__hero-qoute a , .main__hero-bath a/*-bath-is-from-page2*/{
+.main__hero-qoute a , .main__hero-bath a/*-main__hero-bath-is-from-page2*/{
     color:white;
     border:1px solid white;
 }
@@ -540,7 +540,7 @@ a {
     }
     .main__hero-bath h4{
         font-size: 30px;
-
     }
+
 
 }
