@@ -418,6 +418,9 @@ a {
     h4 {
         line-height: 20px;
     }
+    .main__hero-bath h4 {
+        font-size: 16px; 
+    }
 }
 
 @media screen and (min-width: 700px) {
@@ -489,6 +492,10 @@ a {
     .main__hero-bath {
         height: 25rem;
     }
+    .main__hero-bath h4 {
+        font-size: 36px;
+        text-shadow: 0.8px 0.8px black;
+    }
 
 }
 
@@ -538,9 +545,10 @@ a {
     .main__hero-bath {
         height: 31rem;
     }
-    .main__hero-bath h4{
-        font-size: 30px;
+    
+    .main__hero-bath h4 {
+        font-size: 48px;
+        text-shadow: 1px 1px black;
     }
-
 
 }
